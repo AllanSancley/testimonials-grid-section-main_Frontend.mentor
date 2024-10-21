@@ -1,0 +1,238 @@
+@font-face {
+    font-family: "barlow";
+    src: url(../font/BarlowSemiCondensed-Regular.ttf);
+}
+body {
+    font-family: "barlow";
+    font-size: 13px;
+    background: hsl(210, 46%, 95%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section {
+    width: 375px;
+    height: auto;
+    margin-top: 70px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+article {
+    width: 325px;
+    position: relative;
+    border-radius: 5px;
+}
+.article_1 {
+    height: 444px;
+    background: hsl(263, 55%, 52%);
+    background-image: url(../images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 200px top;
+    background-size: 105px;
+}
+.article_2 {
+    height: 240px;
+    background: hsl(217, 19%, 35%);
+}
+.article_3 {
+    height: 220px;
+    background: hsl(0, 0%, 100%);
+}
+.article_4 {
+    height: 385px;
+    background-color: hsl(219, 29%, 14%);
+}
+.article_5 {
+    height: 438px;
+    background: hsl(0, 0%, 100%);
+}
+img {
+    width: 30px;
+    height: 30px;
+    margin: 1.80em 0 0 2.308em;
+    position: absolute;
+    border-radius: 50%;
+}
+.img_daniel {
+    border: 2px solid hsl(0 0% 81%/ 50%);
+}
+.img_patrick {
+    border: 2px solid hsl(263, 55%, 52%);
+}
+span {
+    display: block;
+    font-size: 1.05em;
+    margin:25px 0 0 77px;
+}
+.male {
+    font-weight: 600;
+    color: hsl(0, 0%, 81%);
+}
+.female {
+    font-weight: 600;
+    color: hsl(217, 19%, 35%);
+}
+.verified_male {
+    font-size: 0.9em;
+    margin:2px 0 0 77px;
+    color: hsl(0, 0%, 81%);
+    opacity: 50%;
+}
+.verified_female {
+    font-size: 0.9em;
+    margin:2px 0 0 77px;
+    color: hsl(217, 19%, 35%);
+    opacity: 50%;
+}
+.paragraph_1 {
+    width: 265px;
+    font-size: 1.58em; 
+    letter-spacing: 0.006em;
+    line-height: 1.30em;
+    margin: 14px 0 0 30px;
+}
+.color {
+    color: hsl(0, 0%, 100%);
+    font-weight: 500;
+    opacity: 90%;
+}
+.paragraph_2_male {
+    width: 263px;
+    margin-left: 30px;
+    font-size: 1.02em;
+    line-height: 1.32em;
+    font-weight: 500;
+    color: hsl(0, 0%, 81%);
+    opacity: 70%;
+}
+.paragraph_2_female {
+    width: 263px;
+    margin-left: 30px;
+    font-size: 1.02em;
+    line-height: 1.32em;
+    font-weight: 600;
+    color: hsl(217, 19%, 35%);
+    opacity: 50%;
+}
+.paragraph-1-1 {
+    width: 248px;
+}
+.paragraph-5-5 {
+    width: 262px;
+}
+
+.attribution { 
+    font-size: 0.8em; 
+    text-align: center;
+    margin-top: 15px;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+@media (min-width: 320px) {
+    section {
+       max-width: 100%;
+    }
+}
+@media (min-width: 768px) {
+    section {
+        width: 100%;
+
+        display: grid;
+        grid-template-areas: 
+        "daniel jonathan"
+        "daniel jeanette"
+        "kira patrick"
+        "kira patrick";
+    }
+    .article_1 {
+        grid-area: daniel;
+        height: 485px;
+    }
+    .article_2 {
+        grid-area: jonathan;
+    }
+    .article_3 {
+        grid-area: jeanette;
+    }
+    .article_4 {
+        grid-area: patrick;
+        height: 438px;
+    }
+    .article_5 {
+        grid-area: kira;
+    }
+}
+@media (min-width: 1120px) {
+    body {
+        height: 100vh;
+    }
+    section {
+        max-width: 100%;
+
+        display: grid;
+        gap: 30px;
+        grid-template-areas: 
+        "daniel daniel jonathan kira"
+        "jeanette patrick patrick kira";
+    }
+    .article_1 {
+        width: 540px;
+        height: 282px;
+        background-image: url(../images/bg-pattern-quotation.svg);
+        background-repeat: no-repeat;
+        background-position: 358px top;
+        background-size: 105px;
+    }
+    .article_2 {
+        width: 255px;
+        height: 282px;
+    }
+    .article_3 {
+        width: 255px;
+        height: 266px;
+    }
+    .article_4 {
+        width: 540px;
+        height: 266px;
+    }
+    .article_5 {
+        width: 255px;
+        height: 580px;
+    }
+    .paragraph-1 {
+        width: 500px;
+    }
+    .paragraph-1-1 {
+        width: 470px;
+    }
+    .paragraph-2 {
+        width: 190px;
+    }
+    .paragraph-2-2 {
+        width: 190px;
+    }
+    .paragraph-3 {
+        width: 190px;
+    }
+    .paragraph-3-3 {
+        width: 190px;
+    }
+    .paragraph-4 {
+        width: 500px;
+    }
+    .paragraph-4-4 {
+        width: 470px;
+    }
+    .paragraph-5 {
+        width: 200px;
+    }
+    .paragraph-5-5 {
+        width: 190px;
+    }
+}
