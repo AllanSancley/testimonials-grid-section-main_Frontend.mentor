@@ -234,5 +234,7 @@ span {
     }
     .paragraph-5-5 {
         width: 190px;
+        margin-top: 20px;
+        line-height: 1.35em;
     }
 }
